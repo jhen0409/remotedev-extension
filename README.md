@@ -34,9 +34,8 @@ BrowserWindow.removeDevToolsExtension('RemoteDev Extension');
 
 ```bash
 # Apply default remotedev options
-$ $(npm bin)/remotedev-options --hostname localhost --port 5678
-# Start remotedev-server
-$ $(npm bin)/remotedev --hostname localhost --port 5678
+# will start remotedev-server if you have set hostname
+$ $(npm bin)/remotedev-extension --hostname localhost --port 5678
 ```
 
 ## License

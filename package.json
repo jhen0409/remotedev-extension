@@ -20,8 +20,7 @@
     "dist"
   ],
   "bin": {
-    "remotedev": "bin/server.js",
-    "remotedev-options": "bin/options.js"
+    "remotedev-extension": "bin/server.js"
   },
   "scripts": {
     "build": "webpack --stats --progress",

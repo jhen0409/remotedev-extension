@@ -1,0 +1,30 @@
+{
+  "name": "remotedev-extension",
+  "version": "0.0.0",
+  "description": "Including remotedev-app into the Electron devtools",
+  "main": "index.js",
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "bin": {
+    "remotedev": "bin/server.js",
+    "remotedev-options": "bin/options.js"
+  },
+  "scripts": {
+    "build": "webpack --stats --progress",
+    "prepublish": "npm run build"
+  },
+  "author": "Jhen <developer@jhen.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "remotedev-app": "^0.2.6",
+    "webpack": "^1.12.12"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "remotedev-server": "0.0.2"
+  }
+}

@@ -24,7 +24,7 @@
   },
   "scripts": {
     "build": "webpack --stats --progress",
-    "prepublish": "npm run build"
+    "prepublish": "node bin/server.js && npm run build"
   },
   "author": "Jhen <developer@jhen.me>",
   "license": "MIT",

@@ -3,6 +3,15 @@
   "version": "0.0.1",
   "description": "Including remotedev-app into the Electron devtools",
   "main": "index.js",
+  "keywords": [
+    "remote",
+    "redux",
+    "devtools",
+    "remotedev",
+    "react",
+    "electron",
+    "extension"
+  ],
   "files": [
     "bin",
     "dist"

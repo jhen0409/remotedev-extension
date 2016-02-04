@@ -12,7 +12,7 @@ The demo is used [electron-react-boilerplate](https://github.com/chentsulin/elec
 
 ## Installation
 
-Install `remotedev-exteionsion` in your electron project.
+Install `remotedev-extension` in your electron project.
 
 ```bash
 $ npm i --save-dev remotedev-extension

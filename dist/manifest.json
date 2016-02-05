@@ -1,5 +1,5 @@
 {
-  "version": "0.0.2",
+  "version": "0.0.3",
   "name": "RemoteDev Extension",
   "short_name": "RemoteDev Extension",
   "description": "Including remotedev-app into the Electron devtools",

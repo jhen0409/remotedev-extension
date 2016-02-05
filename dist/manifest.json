@@ -1,13 +1,10 @@
 {
-  "version": "0.0.0",
+  "version": "0.0.2",
   "name": "RemoteDev Extension",
   "short_name": "RemoteDev Extension",
   "description": "Including remotedev-app into the Electron devtools",
   "manifest_version": 2,
   "devtools_page": "devtools.html",
-  "externally_connectable": {
-    "ids": ["*"]
-  },
   "permissions": [ "storage" ],
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'; style-src * 'unsafe-inline'; img-src 'self' data:;"
 }

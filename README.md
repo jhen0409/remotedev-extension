@@ -1,6 +1,6 @@
 # RemoteDev Extension [![NPM version](http://img.shields.io/npm/v/remotedev-extension.svg?style=flat)](https://www.npmjs.com/package/remotedev-extension) [![Dependency Status](https://david-dm.org/jhen0409/remotedev-extension.svg)](https://david-dm.org/jhen0409/remotedev-extension) [![devDependency Status](https://david-dm.org/jhen0409/remotedev-extension/dev-status.svg)](https://david-dm.org/jhen0409/remotedev-extension#info=devDependencies)
 
-> The DevTools Extension for including remotedev-app into the DevTools
+> The DevTools Extension for including remotedev-app into the Chrome/Electron DevTools
 
 ![Demo](demo.gif)
 
@@ -23,7 +23,7 @@ $ npm i --save-dev remotedev-extension
 BrowserWindow.addDevToolsExtension('node_modules/remotedev-extension/dist');
 
 // if you want remove it
-BrowserWindow.removeDevToolsExtension('RemoteDev Extension');
+BrowserWindow.removeDevToolsExtension('RemoteDev DevTools');
 ```
 
 ## CLI and node
@@ -39,7 +39,7 @@ require('remotedev-extension')(options);
 #### Options
 
 * --hostname: the `remotedev-server` hostname, will apply `node_modules/remotedev-extension/dist` settings.
-* --port: the `remotedev-server` port, will apply `node_modules/remotedev-extension/dist` settings. (default: 8085)
+* --port: the `remotedev-server` port, will apply `node_modules/remotedev-extension/dist` settings. (default: 8000)
 * --runserver: if you have set `hostname`, will start the `remotedev-server` with options on local.
 
 ## License

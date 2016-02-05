@@ -14,7 +14,7 @@ module.exports = function(argv) {
         '__remotedevOptionsSet__',
         'window.remotedevOptions = ' + JSON.stringify({
           hostname: argv.hostname,
-          port: argv.port || 8085,
+          port: argv.port || 8000,
           autoReconnect: true
         })
       )

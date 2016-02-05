@@ -1,7 +1,7 @@
 {
   "name": "remotedev-extension",
   "version": "0.0.3",
-  "description": "Including remotedev-app into the Electron devtools",
+  "description": "Including remotedev-app into the devtools",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jhen0409/remotedev-extension.git"

@@ -2,7 +2,7 @@
   "version": "0.0.3",
   "name": "RemoteDev Extension",
   "short_name": "RemoteDev Extension",
-  "description": "Including remotedev-app into the Electron devtools",
+  "description": "Including remotedev-app into the DevTools",
   "manifest_version": 2,
   "devtools_page": "devtools.html",
   "permissions": [ "storage" ],

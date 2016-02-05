@@ -19,8 +19,9 @@
     "bin",
     "dist"
   ],
+  "main": "bin/server.js",
   "bin": {
-    "remotedev-extension": "bin/server.js"
+    "remotedev-extension": "bin/extension.js"
   },
   "scripts": {
     "build": "webpack --stats --progress",
@@ -36,6 +37,6 @@
   },
   "dependencies": {
     "minimist": "^1.2.0",
-    "remotedev-server": "0.0.2"
+    "remotedev-server": "0.0.3"
   }
 }

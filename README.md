@@ -12,15 +12,11 @@ The demo is used [electron-react-boilerplate](https://github.com/chentsulin/elec
 
 ## Installation
 
-Install `remotedev-extension` in your electron project.
-
 ```bash
 $ npm i --save-dev remotedev-extension
 ```
 
 ## Usage (Electron)
-
-#### Install extension
 
 ```js
 // app on ready
@@ -30,13 +26,21 @@ BrowserWindow.addDevToolsExtension('node_modules/remotedev-extension/dist');
 BrowserWindow.removeDevToolsExtension('RemoteDev Extension');
 ```
 
-#### Custom options
+## CLI and node
 
 ```bash
-# Apply default remotedev options
-# will start remotedev-server if you have set hostname
-$ $(npm bin)/remotedev-extension --hostname localhost --port 5678
+$ remotedev-extension [options]
 ```
+
+```js
+require('remotedev-extension')(options);
+```
+
+#### Options
+
+* --hostname: the `remotedev-server` hostname, will apply `node_modules/remotedev-extension/dist` settings.
+* --port: the `remotedev-server` port, will apply `node_modules/remotedev-extension/dist` settings. (default: 8085)
+* --runserver: if you have set `hostname`, will start the `remotedev-server` with options on local.
 
 ## License
 

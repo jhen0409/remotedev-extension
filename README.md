@@ -16,6 +16,10 @@ The demo is used [electron-react-boilerplate](https://github.com/chentsulin/elec
 $ npm i --save-dev remotedev-extension
 ```
 
+## Usage (Chrome)
+
+[Download Chrome Extension](https://chrome.google.com/webstore/detail/remotedev-devtools/npmkpkaejamnfodceoimeeioacfcijop)
+
 ## Usage (Electron)
 
 ```js

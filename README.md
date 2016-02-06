@@ -42,9 +42,11 @@ require('remotedev-extension')(options);
 
 #### Options
 
-* --hostname: the `remotedev-server` hostname, will apply `node_modules/remotedev-extension/dist` settings.
-* --port: the `remotedev-server` port, will apply `node_modules/remotedev-extension/dist` settings. (default: 8000)
-* --runserver: if you have set `hostname`, will start the `remotedev-server` with options on local.
+* --hostname: the `remotedev-server` hostname, will apply `node_modules/remotedev-extension/dist` settings.  
+(default: `localhost` if `port` is set)
+* --port: the `remotedev-server` port, will apply `node_modules/remotedev-extension/dist` settings.  
+(default: `8000` if `runserver` or `hostname` is set)
+* --runserver: start the `remotedev-server` with options on local.
 
 ## License
 

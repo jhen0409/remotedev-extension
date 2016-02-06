@@ -7,7 +7,11 @@ const startRemoteDev = require('remotedev-server');
 const html = fs.readFileSync(filePath, 'utf-8');
 
 module.exports = function(argv) {
-  if (argv.hostname) {
+  if (argv.runserver) {
+    argv.port = argv.port || 8000;
+    startRemoteDev(argv);
+  }
+  if (argv.hostname || argv.port) {
     fs.writeFileSync(
       distPath,
       html.replace(
@@ -19,10 +23,6 @@ module.exports = function(argv) {
         })
       )
     );
-    // have hostname, start remotedev server
-    if (argv.runserver) {
-      startRemoteDev(argv);
-    }
   } else {
     fs.writeFileSync(distPath, html);
   }

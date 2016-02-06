@@ -12,6 +12,7 @@
     "devtools",
     "remotedev",
     "react",
+    "chrome",
     "electron",
     "extension"
   ],
@@ -19,14 +20,14 @@
     "bin",
     "dist"
   ],
-  "main": "bin/server.js",
+  "main": "bin/extension.js",
   "bin": {
-    "remotedev-extension": "bin/extension.js"
+    "remotedev-extension": "bin/cli.js"
   },
   "scripts": {
-    "compress": "node bin/extension.js && nodezip -c dist.zip dist",
+    "compress": "node bin/cli.js && nodezip -c dist.zip dist",
     "build": "webpack --stats --progress",
-    "prepublish": "node bin/extension.js && npm run build"
+    "prepublish": "node bin/cli.js && npm run build"
   },
   "author": "Jhen <developer@jhen.me>",
   "license": "MIT",

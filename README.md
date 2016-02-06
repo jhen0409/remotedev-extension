@@ -48,6 +48,10 @@ require('remotedev-extension')(options);
 (default: `8000` if `runserver` or `hostname` is set)
 * --runserver: start the `remotedev-server` with options on local.
 
+## Example
+
+You can refer to commits of [this fork](https://github.com/jhen0409/electron-react-boilerplate/commits/remotedev-ext).
+
 ## License
 
 [MIT](LICENSE)

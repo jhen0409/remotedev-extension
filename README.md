@@ -1,6 +1,6 @@
 # RemoteDev Extension [![NPM version](http://img.shields.io/npm/v/remotedev-extension.svg?style=flat)](https://www.npmjs.com/package/remotedev-extension) [![Dependency Status](https://david-dm.org/jhen0409/remotedev-extension.svg)](https://david-dm.org/jhen0409/remotedev-extension) [![devDependency Status](https://david-dm.org/jhen0409/remotedev-extension/dev-status.svg)](https://david-dm.org/jhen0409/remotedev-extension#info=devDependencies)
 
-> The DevTools Extension for including remotedev-app into the Chrome/Electron DevTools
+> Use Redux DevTools in the Chrome/Electron DevTools
 
 ![Demo](demo.gif)
 
@@ -8,7 +8,9 @@ The demo is used [electron-react-boilerplate](https://github.com/chentsulin/elec
 
 ## Why?
 
-[Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension) is awesome, but it [cannot running on Electron](https://github.com/zalmoxisus/redux-devtools-extension/issues/13). This project used [remotedev-app](https://github.com/zalmoxisus/remotedev-app), and with [remotedev](https://github.com/zalmoxisus/remotedev)/[remote-redux-devtools](https://github.com/zalmoxisus/remote-redux-devtools).
+[Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension) is awesome, but it [cannot running on Electron](https://github.com/zalmoxisus/redux-devtools-extension/issues/13). This project as a major support for the DevTools Extension of [Electron](https://github.com/atom/electron), it means that it doesn't use __background script__.
+
+This extension is included [remotedev-app](https://github.com/zalmoxisus/remotedev-app), can be used with [remotedev](https://github.com/zalmoxisus/remotedev) / [remote-redux-devtools](https://github.com/zalmoxisus/remote-redux-devtools).
 
 ## Installation
 
@@ -50,7 +52,7 @@ require('remotedev-extension')(options);
 
 ## Example
 
-You can refer to commits of [this fork](https://github.com/jhen0409/electron-react-boilerplate/commits/remotedev-ext).
+__*[Electron]*__ You can refer to commits of [this fork](https://github.com/jhen0409/electron-react-boilerplate/commits/remotedev-ext).
 
 ## License
 

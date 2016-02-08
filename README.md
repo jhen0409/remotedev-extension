@@ -2,7 +2,7 @@
 
 > Use Redux DevTools in the Chrome/Electron DevTools
 
-![Demo](demo.gif)
+![Demo](demo.png)
 
 The demo is used [electron-react-boilerplate](https://github.com/chentsulin/electron-react-boilerplate).
 

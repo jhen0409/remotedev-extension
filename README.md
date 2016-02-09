@@ -20,17 +20,24 @@ $ npm i --save-dev remotedev-extension
 
 ## Usage (Browser)
 
-[Download Chrome Extension](https://chrome.google.com/webstore/detail/remotedev-devtools/npmkpkaejamnfodceoimeeioacfcijop)
+[Download Chrome Extension](https://chrome.google.com/webstore/detail/remotedev-devtools/npmkpkaejamnfodceoimeeioacfcijop)  
 [Download Opera Extension](https://addons.opera.com/extensions/details/remotedev-devtools)
 
 ## Usage (Electron)
 
 ```js
-// app on ready
-BrowserWindow.addDevToolsExtension('node_modules/remotedev-extension/dist');
+const electron = require('electron');
+const app = electron.app;
+const BrowserWindow = electron.BrowserWindow;
 
-// if you want remove it
-BrowserWindow.removeDevToolsExtension('RemoteDev DevTools');
+app.on('ready', () => {
+  // Add DevTools Extension,
+  // if you want remove it,
+  // Use: BrowserWindow.removeDevToolsExtension('RemoteDev DevTools');
+  BrowserWindow.addDevToolsExtension('node_modules/remotedev-extension/dist');
+
+  // ...
+});
 ```
 
 ## CLI and node

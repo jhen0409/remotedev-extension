@@ -1,6 +1,6 @@
 # RemoteDev Extension [![NPM version](http://img.shields.io/npm/v/remotedev-extension.svg?style=flat)](https://www.npmjs.com/package/remotedev-extension) [![Dependency Status](https://david-dm.org/jhen0409/remotedev-extension.svg)](https://david-dm.org/jhen0409/remotedev-extension) [![devDependency Status](https://david-dm.org/jhen0409/remotedev-extension/dev-status.svg)](https://david-dm.org/jhen0409/remotedev-extension#info=devDependencies)
 
-> Use Redux DevTools in the Chrome/Electron DevTools
+> Use Redux DevTools in the Browser/Electron DevTools
 
 ![Demo](demo.png)
 
@@ -18,9 +18,10 @@ This extension is included [remotedev-app](https://github.com/zalmoxisus/remoted
 $ npm i --save-dev remotedev-extension
 ```
 
-## Usage (Chrome)
+## Usage (Browser)
 
 [Download Chrome Extension](https://chrome.google.com/webstore/detail/remotedev-devtools/npmkpkaejamnfodceoimeeioacfcijop)
+[Download Opera Extension](https://addons.opera.com/extensions/details/remotedev-devtools)
 
 ## Usage (Electron)
 

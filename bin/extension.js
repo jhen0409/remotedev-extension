@@ -15,7 +15,7 @@ module.exports = function(argv) {
     fs.writeFileSync(
       distPath,
       html.replace(
-        '__remotedevOptionsSet__',
+        '// __remotedevOptionsSet__',
         'window.remotedevOptions = ' + JSON.stringify({
           hostname: argv.hostname,
           port: argv.port || 8000,

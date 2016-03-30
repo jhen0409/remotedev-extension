@@ -2,7 +2,7 @@
 
 > Use Redux DevTools in the Browser/Electron DevTools
 
-![Demo](demo.png)
+![Demo](https://cloud.githubusercontent.com/assets/3001525/14159740/2b6b89b0-f70a-11e5-8d31-20046b482208.png)
 
 The demo is used [electron-react-boilerplate](https://github.com/chentsulin/electron-react-boilerplate).
 
@@ -58,9 +58,9 @@ require('remotedev-extension')(options);
 (default: `8000` if `runserver` or `hostname` is set)
 * --runserver: start the `remotedev-server` with options on local.
 
-## Example
+## Example of Electron
 
-__*[Electron]*__ You can refer to commits of [this fork](https://github.com/jhen0409/electron-react-boilerplate/commits/remotedev-ext).
+You can refer to [example folder](example).
 
 ## License
 

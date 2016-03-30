@@ -16,21 +16,11 @@ let mainWindow = null;
 
 crashReporter.start();
 
-if (process.env.NODE_ENV === 'development') {
-  require('electron-debug')();
-  const remotedev = require('remotedev-extension');
-  remotedev({
-    localhost: 'localhost',
-    port: 8000,
-    runserver: true,
-  }).on('ready', () => appIsReady());
-}
-
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit();
 });
 
-const appIsReady = () => app.on('ready', () => {
+const appIsReady = () => {
   mainWindow = new BrowserWindow({ width: 1024, height: 728 });
 
   mainWindow.loadURL(`file://${__dirname}/app/app.html`);
@@ -246,4 +236,18 @@ const appIsReady = () => app.on('ready', () => {
     menu = Menu.buildFromTemplate(template);
     mainWindow.setMenu(menu);
   }
-});
+};
+
+if (process.env.NODE_ENV === 'development') {
+  require('electron-debug')();
+  const remotedev = require('remotedev-extension');
+  app.on('ready', () =>
+    remotedev({
+      localhost: 'localhost',
+      port: 8000,
+      runserver: true
+    }).on('ready', appIsReady)
+  );
+} else {
+  app.on('ready', appIsReady);
+}

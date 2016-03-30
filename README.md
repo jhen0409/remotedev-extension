@@ -40,6 +40,8 @@ app.on('ready', () => {
 });
 ```
 
+__*NOTE:*__ currently just work on Electron version < 0.37.
+
 ## CLI and node
 
 ```bash

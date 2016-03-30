@@ -1,6 +1,6 @@
 {
   "name": "remotedev-extension",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Use Redux DevTools in the Browser/Electron DevTools",
   "repository": {
     "type": "git",

@@ -13,7 +13,6 @@ let menu;
 let template;
 let mainWindow = null;
 
-
 crashReporter.start();
 
 app.on('window-all-closed', () => {
@@ -30,9 +29,8 @@ const appIsReady = () => {
   });
 
   if (process.env.NODE_ENV === 'development') {
-    // Add DevTools Extension,
-    // if you want remove it,
-    // Use: BrowserWindow.removeDevToolsExtension('RemoteDev DevTools');
+    // Add DevTools Extension
+    BrowserWindow.removeDevToolsExtension('RemoteDev DevTools');
     BrowserWindow.addDevToolsExtension('node_modules/remotedev-extension/dist');
     mainWindow.openDevTools();
   }
@@ -245,7 +243,8 @@ if (process.env.NODE_ENV === 'development') {
     remotedev({
       localhost: 'localhost',
       port: 8000,
-      runserver: true
+      runserver: true,
+      'ui-no-buttonbar': true
     }).on('ready', appIsReady)
   );
 } else {

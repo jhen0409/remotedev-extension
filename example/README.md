@@ -14,7 +14,7 @@ This example is used [Electron React Boilerplate](https://github.com/chentsulin/
 
 ```bash
 # clone this repo
-$ git clone 
+$ git clone https://github.com/jhen0409/remotedev-extension.git
 
 # Install dependencies
 $ cd example && npm i

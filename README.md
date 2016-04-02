@@ -59,6 +59,7 @@ require('remotedev-extension')(options);
 * --port: the `remotedev-server` port, will apply `node_modules/remotedev-extension/dist` settings.  
 (default: `8000` if `runserver` or `hostname` is set)
 * --runserver: start the `remotedev-server` with options on local.
+* --ui-no-buttonbar: Set `noButtonBar` prop for [remotedev-app](https://github.com/zalmoxisus/remotedev-app/blob/master/src/app/index.js#L19).
 
 ## Example of Electron
 

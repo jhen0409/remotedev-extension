@@ -15,7 +15,8 @@ module.exports = argv => {
         'window.remotedevOptions = ' + JSON.stringify({
           hostname: argv.hostname,
           port: argv.port || 8000,
-          autoReconnect: true
+          autoReconnect: true,
+          noButtonBar: argv['ui-no-buttonbar']
         })
       )
     );

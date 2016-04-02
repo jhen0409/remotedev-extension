@@ -80,7 +80,7 @@
     "react-addons-test-utils": "^0.14.7",
     "redux-logger": "^2.6.1",
     "remote-redux-devtools": "^0.1.5",
-    "remotedev-extension": "0.0.7",
+    "remotedev-extension": "0.0.8",
     "selenium-webdriver": "^2.53.1",
     "sinon": "^1.17.3",
     "style-loader": "^0.13.1",

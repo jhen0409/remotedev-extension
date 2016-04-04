@@ -13,7 +13,7 @@ module.exports = argv => {
       html.replace(
         '// __remotedevOptionsSet__',
         'window.remotedevOptions = ' + JSON.stringify({
-          hostname: argv.hostname,
+          hostname: argv.hostname || 'localhost',
           port: argv.port || 8000,
           autoReconnect: true,
           noButtonBar: argv['ui-no-buttonbar']

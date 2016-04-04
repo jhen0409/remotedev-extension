@@ -40,7 +40,7 @@ app.on('ready', () => {
 });
 ```
 
-__*NOTE:*__ currently just work on Electron version < 0.37.
+__*NOTE:*__ The Electron v0.37 have a [separate window problem](https://github.com/atom/electron/issues/4958#issuecomment-205121647).
 
 ## CLI and node
 

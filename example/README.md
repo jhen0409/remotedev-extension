@@ -6,6 +6,7 @@ This example is used [Electron React Boilerplate](https://github.com/chentsulin/
 
 * Changed [package.json](package.json)
 * Changed [main.js](main.js)
+* Changed [server.js](server.js)
 * Changed [app/store/configureStore.development.js](app/store/configureStore.development.js)
 * Changed [app/containers/App.js](app/containers/App.js)
 * Removed [app/containers/DevTools.js](app/containers/DevTools.js)

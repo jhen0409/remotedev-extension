@@ -27,3 +27,11 @@ app.listen(PORT, 'localhost', err => {
 
   console.log(`Listening at http://localhost:${PORT}`);
 });
+
+const remotedev = require('remotedev-extension');
+remotedev({
+  hostname: 'localhost',
+  port: 8000,
+  runserver: true,
+  'ui-no-buttonbar': true
+});

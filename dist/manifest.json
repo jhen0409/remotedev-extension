@@ -1,5 +1,5 @@
 {
-  "version": "0.0.6",
+  "version": "0.0.10",
   "name": "RemoteDev DevTools",
   "manifest_version": 2,
   "description": "Use Redux DevTools in the DevTools",

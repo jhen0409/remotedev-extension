@@ -36,11 +36,11 @@
     "node-zip": "^1.1.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
-    "remotedev-app": "^0.3.0",
+    "remotedev-app": "^0.3.4",
     "webpack": "^1.12.12"
   },
   "dependencies": {
     "minimist": "^1.2.0",
-    "remotedev-server": "0.0.6"
+    "remotedev-server": "0.0.7"
   }
 }
